@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <title> ManiTrans </title>
+</head>
+
+
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:40px">ManiTrans: Entity-Level Text-Guided Image Manipulation via Token-wise Semantic Alignment and Generation</span>
+    </div>
+
+    <br>
+    <table align="center" width="900px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Jianan Wang</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Guansong Lu</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Hang Xu</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Zhenguo Li</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Chunjing Xu</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yanwei Fu</a></span>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px">Fudan University &nbsp; &nbsp; Huawei Noah’s Ark Lab</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <p>
+        Existing text-guided image manipulation methods aim to
+        modify the appearance of the image or to edit a few objects in a virtual or simple scenario,
+        which is far from practical application.
+        In this work, we study a novel task on text-guided image manipulation on the entity level in the real world.
+        The task imposes three basic requirements,
+        (1) to edit the entity consistent with the text descriptions,
+        (2) to preserve the text-irrelevant regions,
+        and (3) to merge the manipulated entity into the image naturally.
+        To this end, we propose a new transformer-based framework based on the two-stage image synthesis method,
+        namely ManiTrans, which can not only edit the appearance of entities
+        but also generate new entities corresponding to the text guidance.
+        Our framework incorporates a semantic alignment module to locate the image regions to be manipulated,
+        and a semantic loss to help align the relationship between the vision and language.
+        We conduct extensive experiments on the real datasets, CUB, Oxford, and COCO datasets to
+        verify that our method can distinguish the relevant and irrelevant regions
+        and achieve more precise and flexible manipulation compared with baseline methods.
+    </p>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>ManiTrans</h1>
+    </div>
+    <br>
+    <table align="center" width="600px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="./imgs/framework.png" width="900px"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i>ManiTrans Framework.</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div" align="center">
+        <h2 id="paper">Paper and Code</h2>
+    </div>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:200px" src="">
+                </td>
+                <td>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt"> ManiTrans: Entity-Level Text-Guided Image Manipulation via Token-wise Semantic Alignment and Generation
+                    </span></b>
+                    <br><br>
+                    <span style="font-size:14pt">  Jianan Wang, Guansong Lu, Hang Xu, Zhenguo Li, Chunjing Xu, Yanwei Fu</span>
+                    <br><br>
+                    <span style="font-size:18px">
+                        <a href="">[Paper]</a>
+<!--                        <a href="">[Bibtex]</a>-->
+                        <a href="">[GitHub]</a>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <hr>
+    <div class="center-div">
+        <h1 id="code">Results</h1>
+    </div>
+    <div class="center-div">
+        <br>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="center-div" align="center">
+                            <a href="#"><img src="./imgs/multi_entities.png" width="900px"></a><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="center-div">
+                            <span style="font-size:16px"><i>Multiple entities manipulation.</i>
+                            </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="center-div" align="center">
+                            <a href="#"><img src="./imgs/across_categories.png" width="900px"></a><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="center-div">
+                            <span style="font-size:16px"><i>Manipulation across categories on COCO.</i>
+                            </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="center-div" align="center">
+                            <a href="#"><img src="./imgs/bird_flower_exchange.png" width="900px"></a><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="center-div">
+                            <span style="font-size:16px"><i>Manipulation from bird to flower and from flower to bird on CUB and Oxford.</i>
+                            </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+    <hr>
+    <table align="center" width="980px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                            The corresponding authors are Yanwei Fu, and Hang Xu.
+                        </div>
+                        <div class="center-div">
+                            This work was supported in part by NSFC Project (62176061),
+                            and SMSTM Projects (2018SHZDZX01 and 2021SHZDZX0103).
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+</body>>
+
+</html>
+
+
